@@ -25,41 +25,16 @@
         app:layout_constraintVertical_bias="0.18">
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/operation"
             android:layout_width="match_parent"
-            android:layout_height="32dp"
+            android:layout_height="50dp"
             android:background="@color/black"
             android:gravity="end"
-            android:text="35.4+62.2"
+            android:text="0"
             android:textColor="@color/white"
-            android:textSize="25sp" />
+            android:textSize="35sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="138dp"
-                android:layout_height="32dp"
-                android:background="@color/black"
-                android:text="Результат"
-                android:layout_weight="1"
-                android:textColor="@color/white"
-                android:textSize="25sp" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="138dp"
-                android:layout_height="32dp"
-                android:layout_weight="1"
-                android:background="@color/black"
-                android:gravity="end"
-                android:text="97.6"
-                android:textColor="@color/white"
-                android:textSize="25sp" />
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -67,40 +42,43 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:alpha="0.7"
                 android:background="@drawable/button_round"
-                android:text="@string/_1"
+                android:text="@string/_7"
                 android:textColor="@color/white"
+                android:onClick="onClick"
                 android:textSize="@dimen/button_text" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/button8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:alpha="0.7"
                 android:background="@drawable/button_round"
-                android:text="@string/_2"
+                android:text="@string/_8"
                 android:textColor="@color/white"
+                android:onClick="onClick"
                 android:textSize="@dimen/button_text" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/button9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:alpha="0.7"
                 android:background="@drawable/button_round"
-                android:text="@string/_3"
+                android:text="@string/_9"
                 android:textColor="@color/white"
+                android:onClick="onClick"
                 android:textSize="@dimen/button_text" />
 
             <Button
-                android:id="@+id/button10"
+                android:id="@+id/buttondivide"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -108,6 +86,7 @@
                 android:background="@drawable/button_round"
                 android:text="@string/_divide"
                 android:textColor="@color/white"
+                android:onClick="actions"
                 android:textSize="@dimen/button_text" />
         </LinearLayout>
 
@@ -125,6 +104,7 @@
                 android:background="@drawable/button_round"
                 android:text="@string/_4"
                 android:textColor="@color/white"
+                android:onClick="onClick"
                 android:textSize="@dimen/button_text" />
 
             <Button
@@ -136,6 +116,7 @@
                 android:background="@drawable/button_round"
                 android:text="@string/_5"
                 android:textColor="@color/white"
+                android:onClick="onClick"
                 android:textSize="@dimen/button_text" />
 
             <Button
@@ -147,10 +128,11 @@
                 android:background="@drawable/button_round"
                 android:text="@string/_6"
                 android:textColor="@color/white"
+                android:onClick="onClick"
                 android:textSize="@dimen/button_text" />
 
             <Button
-                android:id="@+id/button11"
+                android:id="@+id/buttonmultiply"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -158,6 +140,7 @@
                 android:background="@drawable/button_round"
                 android:text="@string/_multiply"
                 android:textColor="@color/white"
+                android:onClick="actions"
                 android:textSize="@dimen/button_text" />
         </LinearLayout>
 
@@ -167,40 +150,43 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button12"
+                android:id="@+id/button1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:alpha="0.7"
                 android:background="@drawable/button_round"
-                android:text="@string/_7"
+                android:text="@string/_1"
                 android:textColor="@color/white"
+                android:onClick="onClick"
                 android:textSize="@dimen/button_text" />
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:alpha="0.7"
                 android:background="@drawable/button_round"
-                android:text="@string/_8"
+                android:text="@string/_2"
                 android:textColor="@color/white"
+                android:onClick="onClick"
                 android:textSize="@dimen/button_text" />
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/button3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:alpha="0.7"
                 android:background="@drawable/button_round"
-                android:text="@string/_9"
+                android:text="@string/_3"
                 android:textColor="@color/white"
+                android:onClick="onClick"
                 android:textSize="@dimen/button_text" />
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/buttonsubtract"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -208,6 +194,7 @@
                 android:background="@drawable/button_round"
                 android:text="@string/_subtract"
                 android:textColor="@color/white"
+                android:onClick="actions"
                 android:textSize="@dimen/button_text" />
         </LinearLayout>
 
@@ -217,7 +204,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button13"
+                android:id="@+id/buttonclear"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -225,10 +212,11 @@
                 android:background="@drawable/button_round"
                 android:text="@string/_clear"
                 android:textColor="@color/white"
+                android:onClick="onClickClear"
                 android:textSize="@dimen/button_text" />
 
             <Button
-                android:id="@+id/button14"
+                android:id="@+id/button0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -236,10 +224,11 @@
                 android:background="@drawable/button_round"
                 android:text="@string/_0"
                 android:textColor="@color/white"
+                android:onClick="onClick"
                 android:textSize="@dimen/button_text" />
 
             <Button
-                android:id="@+id/button15"
+                android:id="@+id/buttondot"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -247,10 +236,11 @@
                 android:background="@drawable/button_round"
                 android:text="@string/_dot"
                 android:textColor="@color/white"
+                android:onClick="onClick"
                 android:textSize="@dimen/button_text" />
 
             <Button
-                android:id="@+id/button16"
+                android:id="@+id/buttonadd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -258,6 +248,7 @@
                 android:background="@drawable/button_round"
                 android:text="@string/_add"
                 android:textColor="@color/white"
+                android:onClick="actions"
                 android:textSize="@dimen/button_text" />
             />
         </LinearLayout>
@@ -268,7 +259,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button17"
+                android:id="@+id/buttonequal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -276,6 +267,7 @@
                 android:background="@drawable/button_round"
                 android:text="@string/_equal"
                 android:textColor="@color/white"
+                android:onClick="onClickEqual"
                 android:textSize="@dimen/button_text" />
 
 
