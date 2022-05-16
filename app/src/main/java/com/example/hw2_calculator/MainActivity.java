@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.View;
 import android.widget.TextView;
 
@@ -12,7 +13,10 @@ public class MainActivity extends AppCompatActivity {
     Boolean isNull = true;
     String operator;
     String number;
-    private String parcelable_tag;
+    String operations;
+    private String tv0tag = "tv0tag";
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,21 +61,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-    /* public void onSaveInstanceState(@NonNull Bundle instanceState) {
-        super.onSaveInstanceState(instanceState);
-        SaveTextView saveTextViews = new SaveTextView(operation);
-        saveTextViews.setOperation(operation);
-
-    }
-
-    @Override
-    protected void onRestoreInstanceState(@NonNull Bundle instanceState) {
-        super.onRestoreInstanceState(instanceState);
-        SaveTextView saveTextViews = new SaveTextView(operation);
-        saveTextViews = instanceState.getParcelable(parcelable_tag);
-        operation.setText(saveTextViews.getOperation().getText());
-
-    } **/
 
     public void onClickEqual(View view) {
         String nextNumber = operation.getText().toString();
@@ -88,6 +77,19 @@ public class MainActivity extends AppCompatActivity {
         }
         operation.setText(result + "");
     }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle instanceState){
+        super.onSaveInstanceState(instanceState);
+        operations = operation.getText().toString();
+        instanceState.putString(tv0tag, operations);
+    }
+    @Override
+    public void onRestoreInstanceState(@NonNull Bundle instanceState){
+        super.onRestoreInstanceState(instanceState);
+        operation.setText(instanceState.getString(tv0tag, "0"));
+    }
+
 
     public void onClickClear(View view) {
         operation.setText("0");
