@@ -1,5 +1,6 @@
 package com.example.hw2_calculator;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -7,10 +8,11 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    TextView operation;
+   private TextView operation;
     Boolean isNull = true;
     String operator;
     String number;
+    private String parcelable_tag;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +57,21 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+    /* public void onSaveInstanceState(@NonNull Bundle instanceState) {
+        super.onSaveInstanceState(instanceState);
+        SaveTextView saveTextViews = new SaveTextView(operation);
+        saveTextViews.setOperation(operation);
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle instanceState) {
+        super.onRestoreInstanceState(instanceState);
+        SaveTextView saveTextViews = new SaveTextView(operation);
+        saveTextViews = instanceState.getParcelable(parcelable_tag);
+        operation.setText(saveTextViews.getOperation().getText());
+
+    } **/
 
     public void onClickEqual(View view) {
         String nextNumber = operation.getText().toString();
@@ -77,4 +94,5 @@ public class MainActivity extends AppCompatActivity {
         isNull = true;
 
     }
+
 }
