@@ -17,5 +17,6 @@
     <string name="_add">+</string>
     <string name="_clear">C</string>
     <string name="_equal">=</string>
+    <string name="TextView_0">0</string>
 
 </resources>
