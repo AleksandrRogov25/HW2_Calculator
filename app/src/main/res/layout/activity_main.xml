@@ -4,15 +4,222 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/black_and_white_white_smoke_smoking_curve_darkness_980551_pxhere_com"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18">
+
+        <TextView
+            android:id="@+id/operation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/black"
+            android:gravity="end"
+            android:text="@string/TextView_0"
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onClick"
+                android:text="@string/_7"
+                style="@style/MyStyle"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onClick"
+                android:text="@string/_8"
+                style="@style/MyStyle"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onClick"
+                android:text="@string/_9"
+                style="@style/MyStyle"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttondivide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="actions"
+                android:text="@string/_divide"
+                style="@style/MyStyle"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onClick"
+                android:text="@string/_4"
+                style="@style/MyStyle"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onClick"
+                android:text="@string/_5"
+                style="@style/MyStyle"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onClick"
+                android:text="@string/_6"
+                style="@style/MyStyle"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonmultiply"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="actions"
+                android:text="@string/_multiply"
+                style="@style/MyStyle"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onClick"
+                android:text="@string/_1"
+                style="@style/MyStyle"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onClick"
+                android:text="@string/_2"
+                style="@style/MyStyle"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onClick"
+                android:text="@string/_3"
+                style="@style/MyStyle"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonsubtract"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="actions"
+                android:text="@string/_subtract"
+                style="@style/MyStyle"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonclear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onClickClear"
+                android:text="@string/_clear"
+                style="@style/MyStyle"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onClick"
+                android:text="@string/_0"
+                style="@style/MyStyle"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttondot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onClick"
+                android:text="@string/_dot"
+                style="@style/MyStyle"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonadd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="actions"
+                android:text="@string/_add"
+                style="@style/MyStyle"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonequal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickEqual"
+                android:text="@string/_equal"
+                style="@style/MyStyle"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
