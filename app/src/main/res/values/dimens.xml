@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_text">35sp</dimen>
+    <dimen name="button_settings">20sp</dimen>
+    <dimen name="margin">4dp</dimen>
+    <dimen name="textSize">35sp</dimen>
+    <dimen name="layout_marginStart">32dp</dimen>
+    <dimen name="layout_marginTop">250dp</dimen>
+    <dimen name="layout_marginEnd">32dp</dimen>
+    <dimen name="layout_marginBottom">24dp</dimen>
+    <dimen name="text_settings">50sp</dimen>
+</resources>

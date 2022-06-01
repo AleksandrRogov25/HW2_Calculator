@@ -5,29 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
-    android:background="@drawable/black_and_white_white_smoke_smoking_curve_darkness_980551_pxhere_com"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/black_and_white_white_smoke_smoking_curve_darkness_980551_pxhere_com" >
+
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="0.3"
+
+        android:layout_weight="0.4"
         android:text="@string/btn_settings"
         style="@style/MyStyle"
-        android:textSize="@dimen/button_settings"
         tools:ignore="MissingConstraints" />
-
-
-
     <LinearLayout
-        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="@dimen/layout_marginStart"
-        android:layout_marginTop="@dimen/layout_marginTop"
-        android:layout_marginEnd="@dimen/layout_marginEnd"
-        android:layout_marginBottom="@dimen/layout_marginBottom"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="2dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,13 +36,12 @@
         <TextView
             android:id="@+id/operation"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@color/background"
+            android:layout_height="wrap_content"
+            android:background="#4D000000"
             android:gravity="end"
             android:text="@string/TextView_0"
             android:textColor="@color/white"
-            android:textSize="@dimen/textSize" />
-
+            android:textSize="35sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -54,38 +50,34 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button7"
+                style="@style/MyStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/_7"
-                style="@style/MyStyle"
-                android:textSize="@dimen/textSize"
                 />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/_8"
                 style="@style/MyStyle"
-                android:textSize="@dimen/textSize"
+                android:text="@string/_8"
                 />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button9"
+                style="@style/MyStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/_9"
-                style="@style/MyStyle"
-                android:textSize="@dimen/textSize"
-                />
+                android:text="@string/_9" />
 
             <com.google.android.material.button.MaterialButton
+
                 android:id="@+id/buttondivide"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/_divide"
                 style="@style/MyStyle"
-                android:textSize="@dimen/textSize"
                 />
         </LinearLayout>
 
@@ -100,7 +92,6 @@
                 android:layout_height="match_parent"
                 android:text="@string/_4"
                 style="@style/MyStyle"
-                android:textSize="@dimen/textSize"
                 />
 
             <com.google.android.material.button.MaterialButton
@@ -109,7 +100,6 @@
                 android:layout_height="match_parent"
                 android:text="@string/_5"
                 style="@style/MyStyle"
-                android:textSize="@dimen/textSize"
                 />
 
             <com.google.android.material.button.MaterialButton
@@ -118,7 +108,6 @@
                 android:layout_height="match_parent"
                 android:text="@string/_6"
                 style="@style/MyStyle"
-                android:textSize="@dimen/textSize"
                 />
 
             <com.google.android.material.button.MaterialButton
@@ -127,7 +116,6 @@
                 android:layout_height="match_parent"
                 android:text="@string/_multiply"
                 style="@style/MyStyle"
-                android:textSize="@dimen/textSize"
                 />
         </LinearLayout>
 
@@ -142,7 +130,6 @@
                 android:layout_height="match_parent"
                 android:text="@string/_1"
                 style="@style/MyStyle"
-                android:textSize="@dimen/textSize"
                 />
 
             <com.google.android.material.button.MaterialButton
@@ -151,7 +138,6 @@
                 android:layout_height="match_parent"
                 android:text="@string/_2"
                 style="@style/MyStyle"
-                android:textSize="@dimen/textSize"
                 />
 
             <com.google.android.material.button.MaterialButton
@@ -160,8 +146,9 @@
                 android:layout_height="match_parent"
                 android:text="@string/_3"
                 style="@style/MyStyle"
-                android:textSize="@dimen/textSize"
                 />
+
+
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonsubtract"
@@ -169,7 +156,7 @@
                 android:layout_height="match_parent"
                 android:text="@string/_subtract"
                 style="@style/MyStyle"
-                android:textSize="@dimen/textSize"
+                android:textSize="@dimen/button_text"
                 />
         </LinearLayout>
 
@@ -183,8 +170,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/_clear"
+                android:onClick="onClickClear"
                 style="@style/MyStyle"
-                android:textSize="@dimen/textSize"
                 />
 
             <com.google.android.material.button.MaterialButton
@@ -193,7 +180,6 @@
                 android:layout_height="match_parent"
                 android:text="@string/_0"
                 style="@style/MyStyle"
-                android:textSize="@dimen/textSize"
                 />
 
             <com.google.android.material.button.MaterialButton
@@ -202,7 +188,6 @@
                 android:layout_height="match_parent"
                 android:text="@string/_dot"
                 style="@style/MyStyle"
-                android:textSize="@dimen/textSize"
                 />
 
             <com.google.android.material.button.MaterialButton
@@ -211,24 +196,21 @@
                 android:layout_height="match_parent"
                 android:text="@string/_add"
                 style="@style/MyStyle"
-                android:textSize="@dimen/textSize"
                 />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="83dp"
             android:orientation="horizontal">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonequal"
+                style="@style/MyStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/_equal"
-                style="@style/MyStyle"
-                android:textSize="@dimen/textSize"
-                />
+                android:text="@string/_equal" />
 
 
         </LinearLayout>
