@@ -4,8 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/GeekBrains/HW2_Calculator/app/src/main/res/drawable/button_round.xml" value="0.3675" />
-        <entry key="..\:/GeekBrains/HW2_Calculator/app/src/main/res/layout-land/activity_main.xml" value="0.24895833333333334" />
+        <entry key="..\:/GeekBrains/HW2_Calculator/app/src/main/res/layout-land/activity_main.xml" value="0.1" />
         <entry key="..\:/GeekBrains/HW2_Calculator/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/GeekBrains/HW2_Calculator/app/src/main/res/layout/activity_settings.xml" value="0.1" />
       </map>
     </option>
   </component>

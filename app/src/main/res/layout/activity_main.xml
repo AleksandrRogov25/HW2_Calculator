@@ -8,15 +8,26 @@
     android:background="@drawable/black_and_white_white_smoke_smoking_curve_darkness_980551_pxhere_com"
     tools:context=".MainActivity">
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="@string/btn_settings"
+        style="@style/MyStyle"
+        android:textSize="@dimen/button_settings"
+        tools:ignore="MissingConstraints" />
+
+
 
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginStart="@dimen/layout_marginStart"
+        android:layout_marginTop="@dimen/layout_marginTop"
+        android:layout_marginEnd="@dimen/layout_marginEnd"
+        android:layout_marginBottom="@dimen/layout_marginBottom"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,11 +40,11 @@
             android:id="@+id/operation"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@color/black"
+            android:background="@color/background"
             android:gravity="end"
             android:text="@string/TextView_0"
             android:textColor="@color/white"
-            android:textSize="35sp" />
+            android:textSize="@dimen/textSize" />
 
 
         <LinearLayout
@@ -45,36 +56,36 @@
                 android:id="@+id/button7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:onClick="onClick"
                 android:text="@string/_7"
                 style="@style/MyStyle"
+                android:textSize="@dimen/textSize"
                 />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:onClick="onClick"
                 android:text="@string/_8"
                 style="@style/MyStyle"
+                android:textSize="@dimen/textSize"
                 />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button9"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:onClick="onClick"
                 android:text="@string/_9"
                 style="@style/MyStyle"
+                android:textSize="@dimen/textSize"
                 />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttondivide"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:onClick="actions"
                 android:text="@string/_divide"
                 style="@style/MyStyle"
+                android:textSize="@dimen/textSize"
                 />
         </LinearLayout>
 
@@ -87,36 +98,36 @@
                 android:id="@+id/button4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:onClick="onClick"
                 android:text="@string/_4"
                 style="@style/MyStyle"
+                android:textSize="@dimen/textSize"
                 />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:onClick="onClick"
                 android:text="@string/_5"
                 style="@style/MyStyle"
+                android:textSize="@dimen/textSize"
                 />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:onClick="onClick"
                 android:text="@string/_6"
                 style="@style/MyStyle"
+                android:textSize="@dimen/textSize"
                 />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonmultiply"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:onClick="actions"
                 android:text="@string/_multiply"
                 style="@style/MyStyle"
+                android:textSize="@dimen/textSize"
                 />
         </LinearLayout>
 
@@ -129,36 +140,36 @@
                 android:id="@+id/button1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:onClick="onClick"
                 android:text="@string/_1"
                 style="@style/MyStyle"
+                android:textSize="@dimen/textSize"
                 />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:onClick="onClick"
                 android:text="@string/_2"
                 style="@style/MyStyle"
+                android:textSize="@dimen/textSize"
                 />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:onClick="onClick"
                 android:text="@string/_3"
                 style="@style/MyStyle"
+                android:textSize="@dimen/textSize"
                 />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonsubtract"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:onClick="actions"
                 android:text="@string/_subtract"
                 style="@style/MyStyle"
+                android:textSize="@dimen/textSize"
                 />
         </LinearLayout>
 
@@ -171,36 +182,36 @@
                 android:id="@+id/buttonclear"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:onClick="onClickClear"
                 android:text="@string/_clear"
                 style="@style/MyStyle"
+                android:textSize="@dimen/textSize"
                 />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button0"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:onClick="onClick"
                 android:text="@string/_0"
                 style="@style/MyStyle"
+                android:textSize="@dimen/textSize"
                 />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttondot"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:onClick="onClick"
                 android:text="@string/_dot"
                 style="@style/MyStyle"
+                android:textSize="@dimen/textSize"
                 />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/buttonadd"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:onClick="actions"
                 android:text="@string/_add"
                 style="@style/MyStyle"
+                android:textSize="@dimen/textSize"
                 />
 
         </LinearLayout>
@@ -214,9 +225,9 @@
                 android:id="@+id/buttonequal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onClickEqual"
                 android:text="@string/_equal"
                 style="@style/MyStyle"
+                android:textSize="@dimen/textSize"
                 />
 
 
